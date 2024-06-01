@@ -61,5 +61,5 @@ class Cell_Former(nn.Module):
 from torchsummary import summary
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
-model = Swin_Net(backbone_mm)
+model = Cell_Former(backbone_mm)
 model = model.to(device)
